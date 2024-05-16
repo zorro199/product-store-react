@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+.home{
+    background-image: url(../../../public/bgFav.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+
+    .main {
+        background-image: url(../../../public/bg.jpeg);
+        background-repeat: repeat;
+        background-size: contain;
+        border: 3px solid #caf09b;
+        border-radius: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px
+    }
+    
+    // Header
+    .header {
+        >h1 {
+            text-align: center;
+            color: #c0fff7;
+            padding: 20px;
+        }
+    
+        .favicon {
+            display: flex;
+            justify-content: end;
+            padding: 10px;
+            position: relative;
+            margin-right: 50px;
+    
+            > span {
+                font-size: 20px;
+                color: #c0fff7;
+                font-weight: 600;
+                border-radius: 1px;
+                width: 12px;
+                height: 12px;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 30px;
+                right: 41px;
+            }
+        }
+    }
+    
+    
+    
+}
