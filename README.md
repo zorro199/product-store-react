@@ -5,7 +5,7 @@
 В дальнейшем хочу изменить дизайн на более красивый и внедритить систему оплаты выбранного товара.
 
 ![ScreenShot](https://github.com/zorro199/Knife-master-react.js-/blob/main/public/knife1.png)
-![ScreenShot](https://github.com/zorro199/Knife-master-react-js-/blob/main/public/knife2.png)
+![ScreenShot](https://github.com/zorro199/Knife-master-react.js-/blob/main/public/knife2.png)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
