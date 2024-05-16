@@ -1,5 +1,12 @@
 # React + TypeScript + Vite
 
+Этот проект подразумевает собой персональный сайт-одностраничник, где представляются товары (авторские ножи), можно добавить в избранное и заказать.
+Цель данного проекта было использовать и протестировать технологию Redux-toolkit и RTK-query, для возможности хранить избранные товары.
+В дальнейшем хочу изменить дизайн на более красивый и внедритить систему оплаты выбранного товара.
+
+![ScreenShot](https://github.com/zorro199/Knife-master-react-js-/blob/main/public/knife1.png)
+![ScreenShot](https://github.com/zorro199/Knife-master-react-js-/blob/main/public/knife2.png)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
