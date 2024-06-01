@@ -7,7 +7,7 @@ interface IKnifeItem {
     knife: IKnife
 }
 
-function KnifeItem( {knife}:IKnifeItem ) {
+function KnifeItem( {knife}: IKnifeItem ) {
     const { favorites } = useFavorites()
     const { togleFavorites } = useActions()
     const isExist = favorites.some(k => k.id === knife.id)

@@ -51,6 +51,51 @@
         }
     }
     
-    
+    .pagination {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        .pageItem {
+            width: 45px;
+            padding: 10px;
+            border: 1px solid rgb(89 108 82);
+            cursor: pointer;
+            margin-left: 10px;
+            background-color: #013225;
+            color: #fff;
+            text-align: center;
+
+            &:hover {
+                background-color: #788704;
+            }
+        }
+
+        .pageCurrentItem {
+            border: 2px solid orange;
+            font-weight: bold;
+            padding: 13px;
+            cursor: pointer;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+
+        >button {
+            width: 80px;
+            height: 38px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #013225;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #788704;
+            }
+        }
+    }
     
 }
