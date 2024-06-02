@@ -1,22 +1,22 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { IKnife } from "../types/knife.types";
+import { IProduct } from "../types/product.types";
 
 const API_URL = "http://localhost:4200/knife"
 
 export const api = createApi({
     reducerPath: 'api',
-    tagTypes: ['Knife'],
+    tagTypes: ['Product'],
     baseQuery: fetchBaseQuery({
         baseUrl: API_URL
     }),
     endpoints: builder => ({
-        getKnife: builder.query<IKnife[], null>({
+        getProduct: builder.query<IProduct[], null>({
             query: () => '',
             providesTags:() => [{
-                type: 'Knife'
+                type: 'Product'
             }]
         })
     })
 })
 
-export const { useGetKnifeQuery } = api
+export const { useGetProductQuery } = api

@@ -1,13 +1,13 @@
-import KnifeItem from '../knife-item/KnifeItem'
+import ProductItem from '../product-item/ProductItem'
 import styles from './Home.module.scss'
 import Header from './Header'
-import { useGetKnifeQuery } from '../../store/api'
+import { useGetProductQuery } from '../../store/api'
 import Pagination from './Pagination'
 import { usePagination } from './usePagination'
 
 
 function App() {
-  const { isLoading, data } = useGetKnifeQuery(null)
+  const { isLoading, data } = useGetProductQuery(null)
   const { itemPerPage, currentItem, prevPage, nextPage ,paginate } = usePagination()
 
   return (
@@ -16,7 +16,7 @@ function App() {
       <div className={styles.main}>
         {
           isLoading ? <div>Loading...</div>
-          : data ? currentItem?.map(knife => <KnifeItem key={knife.id} knife={knife}/>)
+          : data ? currentItem?.map(product => <ProductItem key={product.id} product={product}/>)
           : <div>Knifes is not founded</div>
         }
     </div>
