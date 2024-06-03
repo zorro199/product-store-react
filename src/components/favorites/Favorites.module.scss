@@ -2,28 +2,35 @@
     margin: 0;
 }
 
-.favorites {
-    background-image: url(../../../public/bgFav.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
 
-    .main {
-        background-image: url(../../../public/bg.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 3px solid #50ead5;
+    .favorites {
+        box-shadow: 0px 0px 7px #26b28d;
         border-radius: 12px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
         margin: 50px;
     }
 
     >h2 {
         margin-left: 50px;
         margin-top: 30px;
-        color: #50ead5;
+        color: #003225;
+    }
+
+    >footer {
+        margin-top: auto;
+        height: 90px;
+        background-color: #013225;
+
+        >p {
+            color: #fff;
+            padding: 30px;
+        }
     }
 }
-
