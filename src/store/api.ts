@@ -21,7 +21,7 @@ export const api = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: API_URL
     }),
-    extractRehydrationInfo(action, { reducerPath }): any {
+    extractRehydrationInfo(action, {}): any {
         if (isHydrateAction(action)) {
           // when persisting the api reducer
           if (action.key === 'key used with redux-persist') {
