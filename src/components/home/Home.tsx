@@ -8,7 +8,7 @@ import { usePagination } from './usePagination'
 
 function App() {
   const { isLoading, data } = useGetProductQuery(null)
-  const { itemPerPage, currentItem, prevPage, nextPage ,paginate } = usePagination()
+  const { itemPerPage, currentItem, paginate } = usePagination()
 
   return (
     <div className={styles.home}>
