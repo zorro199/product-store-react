@@ -1,6 +1,6 @@
 import ProductItem from '../product-item/ProductItem'
 import styles from './Home.module.scss'
-import Header from './Header'
+import Header from '../Header/Header'
 import { useGetProductQuery } from '../../store/api'
 import Pagination from './Pagination'
 import { usePagination } from './usePagination'
@@ -25,10 +25,13 @@ function App() {
         totalItem={data?.length}
         paginate={paginate} 
         />
-        <div className={styles.buttons}>
+        {/* <div className={styles.buttons}>
           <button onClick={prevPage}>Назад</button>
           <button onClick={nextPage}>Вперед</button>
-        </div>
+        </div> */}
+        <footer>
+          <p>&copy; Product store by Zaur</p>
+          </footer>
     </div>
   )
 }

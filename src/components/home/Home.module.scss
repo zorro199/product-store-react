@@ -3,60 +3,27 @@
 }
 
 .home{
-    background-image: url(../../../public/bgFav.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
 
     .main {
-        background-image: url(../../../public/bg.jpeg);
-        background-repeat: repeat;
-        background-size: contain;
-        border: 3px solid #caf09b;
+        box-shadow: 0px 0px 7px #26b28d;
         border-radius: 12px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: stretch;
         margin: 50px
     }
     
-    // Header
-    .header {
-        >h1 {
-            text-align: center;
-            color: #c0fff7;
-            padding: 20px;
-        }
-    
-        .favicon {
-            display: flex;
-            justify-content: end;
-            padding: 10px;
-            position: relative;
-            margin-right: 50px;
-    
-            > span {
-                font-size: 20px;
-                color: #c0fff7;
-                font-weight: 600;
-                border-radius: 1px;
-                width: 12px;
-                height: 12px;
-                display: flex;
-                justify-content: center;
-                position: absolute;
-                top: 30px;
-                right: 41px;
-            }
-        }
-    }
-    
     .pagination {
-        margin-top: 30px;
+        margin: 30px;
         display: flex;
         justify-content: center;
 
         .pageItem {
+            border-radius: 6px;
             width: 45px;
             padding: 10px;
             border: 1px solid rgb(89 108 82);
@@ -84,6 +51,7 @@
         justify-content: center;
 
         >button {
+            border-radius: 6px;
             width: 80px;
             height: 38px;
             padding: 10px;
@@ -98,4 +66,14 @@
         }
     }
     
+    >footer {
+        margin-top: auto;
+        height: 90px;
+        background-color: #013225;
+
+        >p {
+            color: #fff;
+            padding: 30px;
+        }
+    }
 }

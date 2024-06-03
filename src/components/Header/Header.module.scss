@@ -1,0 +1,54 @@
+    // Header
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f3f3f3;
+        box-shadow: 0px -1px 10px #013225;
+
+        >h1 {
+            text-align: center;
+            padding: 20px;
+            
+            .mainLink {
+                text-decoration: none;
+                color: #013225;
+            }
+        }
+
+        .info {
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .about {
+                text-decoration: none;
+                color: #013225;
+                font-weight: bold;
+                font-size: large;
+            }
+
+            .favicon {
+                display: flex;
+                justify-content: end;
+                padding: 10px;
+                position: relative;
+                margin-right: 50px;
+        
+                > span {
+                    font-size: 20px;
+                    color: #013225;
+                    font-weight: 600;
+                    border-radius: 1px;
+                    width: 12px;
+                    height: 12px;
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    top: 30px;
+                    right: 41px;
+                }
+            }
+        }
+
+    }

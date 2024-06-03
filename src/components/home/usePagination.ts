@@ -6,7 +6,7 @@ export function usePagination() {
   const { isLoading, data } = useGetProductQuery(null)
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [itemPerPage] = useState(5)
+  const [itemPerPage] = useState(6)
   const lastItemIndex = currentPage * itemPerPage
   const firstItemIndex = lastItemIndex - itemPerPage
   const currentItem = data?.slice(firstItemIndex, lastItemIndex)
