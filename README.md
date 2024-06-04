@@ -4,8 +4,8 @@
 Цель данного проекта было использовать и протестировать технологию Redux-toolkit и RTK-query, для возможности хранить избранные товары.
 Также использовал localStorage, а длдя гибкой настройки использовал redux-persist, для того чтобы после перезагрузки страницы сохранялось состояние.
 
-![ScreenShot](https://github.com/zorro199/Knife-master-react.js-/blob/main/src/pages/screen1.png)
-![ScreenShot](https://github.com/zorro199/Knife-master-react.js-/blob/main/src/pages/screen2.png)
+![ScreenShot](https://github.com/zorro199/product-store-react/blob/main/public/screen1.png)
+![ScreenShot](https://github.com/zorro199/product-store-react/blob/main/public/screen2.png)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
